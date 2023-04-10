@@ -31,11 +31,42 @@ header {
 }
 
 nav ul {
-  display: flex;
+  position: fixed;
+  width: 45%;
+  height: 100vh;
+  left: -100%;
+  top: 80px;
+  padding-top: 2em;
+  background: var(--gray-300);
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 1000;
+}
+
+#check {
+  display: none;
+}
+
+#check-label {
+  font-size: 2em;
+  color: var(--gray-100);
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+#check-label:hover {
+  color: var(--secondary-color);
+}
+
+#check:checked ~ nav ul {
+  opacity: 1;
+  left: 0;
 }
 
 nav a {
   text-decoration: none;
+  display: block;
   color: var(--gray-100);
   padding: 1em;
   font-weight: 900;
@@ -75,10 +106,6 @@ section {
 .bio {
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
   position: relative;
 }
 .bio > * {
@@ -100,10 +127,6 @@ section {
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
   margin: 2em 0;
 }
 
@@ -129,4 +152,28 @@ section {
 .card img {
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (min-width: 960px) {
+  nav ul {
+    all: unset;
+    display: flex;
+  }
+
+  #check-label {
+    display: none;
+  }
+
+  .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
 }
