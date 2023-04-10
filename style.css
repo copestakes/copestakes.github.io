@@ -117,6 +117,15 @@ section {
   padding-bottom: 1em;
 }
 
+.card a {
+  text-decoration: none;
+  color: var(--gray-900);
+}
+
+.card a:hover {
+  color: var(--primary-color);
+}
+
 .card img {
   width: 100%;
   object-fit: cover;
