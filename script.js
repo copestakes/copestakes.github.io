@@ -5,3 +5,9 @@ function checkAll() {
 window.onload = function () {
   window.addEventListener('resize', checkAll, false);
 };
+
+const date = new Date();
+const year = date.getFullYear();
+let copyRight = document.querySelector('.copyright');
+copyRight.innerHTML = `Copyright ${year} David Copestakes`;
+console.log(year);

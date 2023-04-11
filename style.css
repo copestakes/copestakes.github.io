@@ -124,15 +124,22 @@ section {
 }
 
 .bio {
-  padding: 0 3em;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 5em;
   position: relative;
 }
-.bio > * {
+/* .bio > * {
   flex: 1;
-}
+} */
 
 .bio-photo {
   height: 464px;
+  flex: 1;
+}
+
+.bio-content {
+  flex: 2;
 }
 
 .bio-photo img {
@@ -177,6 +184,7 @@ footer {
   background-color: var(--primary-color);
   padding: 3em;
   text-align: center;
+  color: var(--gray-900);
 }
 
 .social {
