@@ -49,8 +49,9 @@ nav ul {
   width: 45%;
   height: 100vh;
   left: -100%;
-  top: 33px;
+  top: 50px;
   padding-top: 2em;
+  margin: 0;
   background: var(--gray-300);
   transition: all 0.5s;
   opacity: 0;
