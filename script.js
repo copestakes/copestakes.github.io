@@ -6,6 +6,11 @@ window.onload = function () {
   window.addEventListener('resize', checkAll, false);
 };
 
+window.addEventListener('click', function () {
+  var checkbox = document.querySelector('#check');
+  checkbox.checked = !checkbox.checked;
+});
+
 const date = new Date();
 const year = date.getFullYear();
 let copyRight = document.querySelector('.copyright');
