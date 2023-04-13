@@ -154,7 +154,20 @@ section {
   background: var(--gray-100);
   text-align: center;
   padding-bottom: 1em;
+
+  /* Add for overlay */
+  position: relative;
+  overflow: hidden;
 }
+
+.card-overlay {
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background: rgba(0, 177, 186, 0.6);
+}
+
+/*end overlay */
 
 .card a {
   text-decoration: none;
