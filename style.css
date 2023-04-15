@@ -20,6 +20,7 @@ body {
   background-color: var(--gray-100);
   color: var(--gray-900);
   font-family: 'Nunito', sans-serif;
+  line-height: 1.5em;
 }
 
 header {
@@ -130,12 +131,21 @@ section {
   width: 100%;
 }
 
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
 .bio {
   max-width: 500px;
   margin: 0 auto;
   padding: 0;
   position: relative;
 }
+
+/* .bio h1 {
+  margin-bottom: 0;
+} */
 
 .bio-photo img {
   display: block;
@@ -149,7 +159,8 @@ section {
 }
 
 .card-container {
-  margin: 2em 0;
+  max-width: 700px;
+  margin: 2em auto;
 }
 
 .card-container > * {
@@ -244,7 +255,6 @@ footer {
   .bio {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 1em;
     padding: 0 5em;
     max-width: 700px;
@@ -265,9 +275,9 @@ footer {
     flex: 2;
   }
   .card-container {
+    max-width: 1000px;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 1em;
   }
 }
