@@ -151,7 +151,17 @@ section {
 h1 {
   font-size: 2em;
   margin-bottom: 0;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.title {
+  padding: 1em;
+}
+
+.title h3 {
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: 100;
 }
 
 .bio {
@@ -283,6 +293,9 @@ footer {
 }
 
 @media screen and (min-width: 960px) {
+  .title h3 {
+    font-size: 5em;
+  }
   nav ul {
     all: unset;
     display: flex;

@@ -42,3 +42,14 @@ copyRight.innerHTML = `Copyright &copy; ${year} David Copestakes`;
 
 const navbar = document.querySelector('.navigation');
 const navHeight = navbar.getBoundingClientRect().height;
+
+// Ripple effect
+$(document).ready(function () {
+  $('header').ripples();
+
+  $(selector).ripples({
+    resolution: 512,
+    dropRadius: 20,
+    perturbance: 0.4,
+  });
+});
