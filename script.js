@@ -38,7 +38,7 @@ anchors.forEach((e) => {
 const date = new Date();
 const year = date.getFullYear();
 let copyRight = document.querySelector('.copyright');
-copyRight.innerHTML = `Copyright ${year} David Copestakes`;
+copyRight.innerHTML = `Copyright &copy; ${year} David Copestakes`;
 
 const navbar = document.querySelector('.navigation');
 const navHeight = navbar.getBoundingClientRect().height;
