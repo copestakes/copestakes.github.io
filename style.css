@@ -45,6 +45,11 @@ header {
 }
 
 .navigation {
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
   background: var(--primary-color);
   display: flex;
   justify-content: space-between;
@@ -166,6 +171,7 @@ h1 {
   top: -25px;
   background: var(--primary-color);
   display: block;
+  z-index: -100;
 }
 
 .title h3 {
