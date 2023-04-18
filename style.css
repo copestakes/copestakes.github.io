@@ -32,8 +32,12 @@ header {
     rgba(243, 237, 235, 1) 70%
   ); */
 
-  background: rgb(82,105,108);
-  background: linear-gradient(40deg, rgba(82,105,108,1) 0%, rgba(243,237,235,1) 51%);
+  background: rgb(82, 105, 108);
+  background: linear-gradient(
+    40deg,
+    rgba(82, 105, 108, 1) 0%,
+    rgba(243, 237, 235, 1) 51%
+  );
 
   /* background: url(images/curly-bracket-left.svg); */
   background-repeat: no-repeat;
@@ -175,6 +179,7 @@ h1 {
   background: var(--primary-color);
   display: block;
   z-index: -100;
+  border-radius: 2px;
 }
 
 .title h3 {
@@ -247,6 +252,7 @@ h1 {
   text-align: center;
   padding: 1em;
   margin: 2em 0;
+  border-radius: 2px;
 }
 
 .card-image {
