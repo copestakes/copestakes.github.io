@@ -61,7 +61,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .navigation .social {
@@ -330,6 +330,10 @@ footer {
 @media screen and (min-width: 960px) {
   .title h3 {
     font-size: 5em;
+  }
+
+  .navigation {
+    padding: 1em;
   }
 
   .navigation .social {
