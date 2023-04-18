@@ -24,13 +24,16 @@ body {
 }
 
 header {
-  background: rgb(243, 110, 73);
+  /* background: rgb(243, 110, 73);
   background: linear-gradient(
     28deg,
     rgba(243, 110, 73, 1) 0%,
     rgba(235, 185, 107, 1) 14%,
     rgba(243, 237, 235, 1) 70%
-  );
+  ); */
+
+  background: rgb(82,105,108);
+  background: linear-gradient(40deg, rgba(82,105,108,1) 0%, rgba(243,237,235,1) 51%);
 
   /* background: url(images/curly-bracket-left.svg); */
   background-repeat: no-repeat;
@@ -160,7 +163,7 @@ h1 {
 }
 
 .title {
-  padding: 1em;
+  padding: 2em;
 }
 
 .title h3::before {
@@ -175,7 +178,7 @@ h1 {
 }
 
 .title h3 {
-  font-size: 4em;
+  font-size: 3.5em;
   line-height: 1em;
   font-weight: 100;
   margin-top: 1em;

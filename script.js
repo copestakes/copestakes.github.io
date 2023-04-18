@@ -53,3 +53,14 @@ $(document).ready(function () {
     perturbance: 0.4,
   });
 });
+
+//automatic drops
+setInterval(function(){
+  var $el = $('header');
+  var x = Math.random() * $el.outerWidth();
+  var y = Math.random() * $el.outerHeight();
+  var dropRadius = 20;
+  var strength = 0.04 + Math.random() * 0.04;
+
+  $el.ripples('drop', x,y, dropRadius, strength);
+}, 200);
