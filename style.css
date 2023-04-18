@@ -64,6 +64,10 @@ header {
   padding: 0 1em;
 }
 
+.navigation .social {
+  display: none;
+}
+
 .logo {
   height: 50px;
 }
@@ -298,6 +302,10 @@ h1 {
   object-fit: cover;
 }
 
+.contact-me {
+  text-align: center;
+}
+
 footer {
   background-color: var(--primary-color);
   padding: 3em;
@@ -312,6 +320,7 @@ footer {
 .social a {
   color: var(--gray-100);
   transition: 0.2s;
+  font-size: 0.6em;
 }
 
 .social a:hover {
@@ -322,6 +331,11 @@ footer {
   .title h3 {
     font-size: 5em;
   }
+
+  .navigation .social {
+    display: block;
+  }
+
   nav ul {
     all: unset;
     display: flex;
