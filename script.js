@@ -35,6 +35,7 @@ anchors.forEach((e) => {
 //   e.addEventListener('click', openMenu);
 // });
 
+// add year to copyright
 const date = new Date();
 const year = date.getFullYear();
 let copyRight = document.querySelector('.copyright');
@@ -55,12 +56,12 @@ $(document).ready(function () {
 });
 
 //automatic drops
-setInterval(function(){
+setInterval(function () {
   var $el = $('header');
   var x = Math.random() * $el.outerWidth();
   var y = Math.random() * $el.outerHeight();
   var dropRadius = 20;
   var strength = 0.04 + Math.random() * 0.04;
 
-  $el.ripples('drop', x,y, dropRadius, strength);
+  $el.ripples('drop', x, y, dropRadius, strength);
 }, 200);
