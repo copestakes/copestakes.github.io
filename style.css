@@ -262,9 +262,13 @@ h1 {
 .card {
   background: var(--gray-100);
   text-align: center;
-  padding: 1em;
+  padding-bottom: 1em;
   margin: 2em 0;
   border-radius: 2px;
+}
+
+.card h3 {
+  margin: 1em;
 }
 
 .card-image {
