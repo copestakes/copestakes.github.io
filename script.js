@@ -35,6 +35,18 @@ anchors.forEach((e) => {
 //   e.addEventListener('click', openMenu);
 // });
 
+//back button
+
+const backBtn = document.querySelector(".back-btn");
+
+window.onscroll = function() {
+  if (window.scrollY > 100) {
+    backBtn.style.display = "block";
+  } else {
+    backBtn.style.display = "none";
+  }
+};
+
 // add year to copyright
 const date = new Date();
 const year = date.getFullYear();
