@@ -145,6 +145,25 @@ nav li {
   list-style-type: none;
 }
 
+.back-btn a {
+  font-size: 2em;
+}
+
+.back-btn {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+}
+
+.back-btn i {
+  color: var(--primary-color);
+}
+
+.back-btn i:hover {
+  color: var(--secondary-color);
+}
+
 
 .divider {
   text-align: center;
@@ -372,24 +391,6 @@ footer {
     display: none;
   }
 
-  .back-btn a {
-    font-size: 2em;
-  }
-  
-  .back-btn {
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    display: none;
-  }
-  
-  .back-btn i {
-    color: var(--primary-color);
-  }
-  
-  .back-btn i:hover {
-    color: var(--secondary-color);
-  }
 
   .bio {
     display: flex;
