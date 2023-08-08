@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700, 900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Nunito:ital,wght@0,400;1,700, 900&display=swap');
 
 :root {
   --primary-color: #c53027;
   --secondary-color: #a12021;
+  --accent-color: #ebb96b;
   --gray-900: #231511;
   --gray-700: #392d2a;
   --gray-500: #675d5a;
@@ -23,15 +24,13 @@ body {
   line-height: 1.5em;
 }
 
-header {
-  /* background: rgb(243, 110, 73);
-  background: linear-gradient(
-    28deg,
-    rgba(243, 110, 73, 1) 0%,
-    rgba(235, 185, 107, 1) 14%,
-    rgba(243, 237, 235, 1) 70%
-  ); */
+h1,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
 
+header {
   background: rgb(82, 105, 108);
   background: linear-gradient(
     40deg,
@@ -39,7 +38,6 @@ header {
     rgba(243, 237, 235, 1) 51%
   );
 
-  /* background: url(images/curly-bracket-left.svg); */
   background-repeat: no-repeat;
   background-position: left center;
   position: relative;
@@ -79,11 +77,9 @@ header {
   height: 100%;
   object-fit: contain;
   position: absolute;
-  /* padding: 1.5em; */
   border-radius: 50%;
   top: 0;
   left: 1em;
-  /* background: var(--primary-color); */
 }
 
 ul {
@@ -95,7 +91,7 @@ nav ul {
   width: 100%;
   height: 100vh;
   left: -100%;
-  top: 78px;
+  top: 107px;
   padding-top: 2em;
   margin: 0;
   background: var(--gray-300);
@@ -117,7 +113,7 @@ nav ul {
 }
 
 #check-label:hover {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 #check:checked ~ nav ul {
@@ -138,7 +134,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 nav li {
@@ -161,7 +157,7 @@ nav li {
 }
 
 .back-btn i:hover {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .divider {
@@ -216,7 +212,7 @@ h1 {
 .title h3 {
   font-size: 3em;
   line-height: 1em;
-  font-weight: 100;
+  /* font-weight: 100; */
   margin-top: 1em;
 }
 
@@ -342,7 +338,7 @@ h1 {
 }
 
 .card a:hover {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .card img {
@@ -372,7 +368,7 @@ footer {
 }
 
 .social a:hover {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 960px) {
