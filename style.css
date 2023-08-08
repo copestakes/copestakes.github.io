@@ -375,6 +375,7 @@ footer {
   .logo img {
     width: 200%;
     height: 200%;
+    left: -0.5em;
   }
   .title h3 {
     font-size: 5em;
